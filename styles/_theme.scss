@@ -1,0 +1,75 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+
+$highlight-color: #84bd00;
+$base-color: #000;
+$base-mid-color: #414141;
+$mid-gray: #d7dfe9;
+$light-gray: #f2f5f9;
+$light-green: #d7e1c1;
+$bright-color: #fff;
+$display-font: 'Montserrat', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+$shadow: 2px 2px 8px rgba(45, 44, 48, 0.15);
+$shadow-large: 8px 8px 24px rgba(45, 44, 48, 0.15);
+$cubic-transition: cubic-bezier(0,.83,.42,1.01);
+
+.ax_page_wrapper{
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+}
+
+.ax_container {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $display-font;
+  }
+  p{
+    font-family: $body-font;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.ax_text_block{
+  h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 2.4rem;
+  }
+
+  h3{
+    font-size: 2.4rem;
+  }
+
+  p{
+    span{
+      padding: .4rem .6rem;
+      border-radius: .4rem;
+      background: $base-color;
+      color: $bright-color;
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px){
+  .ax_container{
+    width: 90%;
+    display: block;
+    margin: 0 auto;  
+      
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  .ax_container{
+    width: 74rem;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .ax_container{
+    width: 114rem;
+    display: block;
+    margin: 0 auto;
+  }
+}
